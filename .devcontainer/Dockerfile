@@ -12,3 +12,9 @@ RUN sudo apt update; \
 
 USER vscode
 RUN curl https://sh.rustup.rs/ -sSf | sh -s -- -y
+
+RUN sudo apt -y install libclang-dev
+RUN sudo apt -y install clang
+
+RUN sudo groupadd -g 985 video-2 && \
+    sudo usermod -a -G video-2 vscode
