@@ -1,0 +1,9 @@
+[package]
+name = "cam_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.94"
+dotenv = "0.15.0"
+opencv = "0.93.5"
